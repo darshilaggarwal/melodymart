@@ -1,4 +1,3 @@
-import { Header } from "~/components/site-nav";
 import "./globals.css";
 
 export default function RootLayout({
@@ -8,12 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        <Header />
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }
