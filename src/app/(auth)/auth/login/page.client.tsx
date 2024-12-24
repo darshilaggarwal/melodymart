@@ -83,6 +83,15 @@ export const LogInForm: React.FC = () => {
           </div>
         </Form>
       </form>
+      <Button
+        onClick={async () => {
+          await authClient.signIn.social({
+            provider: "google",
+          });
+        }}
+      >
+        Login with google
+      </Button>
     </div>
   );
 };
